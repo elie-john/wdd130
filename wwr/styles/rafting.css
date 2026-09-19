@@ -3,8 +3,8 @@
     --secondary-color: #f6b35b;
     --accent1-color: #17313a;
     --accent2-color: #e8f4ef;
-    --heading-font: "Fraunces", Georgia, serif;
-    --body-font: "DM Sans", Arial, sans-serif;
+    --heading-font: Georgia, "Times New Roman", serif;
+    --body-font: Arial, Helvetica, sans-serif;
 }
 
 * {
@@ -14,7 +14,7 @@
 }
 
 body {
-    background: #f8fbf8;
+    background: var(--accent2-color);
     color: var(--accent1-color);
     font-family: var(--body-font);
     line-height: 1.6;
