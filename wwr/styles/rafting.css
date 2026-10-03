@@ -29,10 +29,15 @@ footer {
 
 header {
     min-height: 94px;
-    display: flex;
+    display: grid;
+    grid-template-columns: auto 1fr;
     align-items: center;
     justify-content: space-between;
     gap: 24px;
+}
+
+header nav {
+    justify-self: end;
 }
 
 .brand img {
@@ -156,6 +161,35 @@ h2 {
     margin-bottom: 12px;
 }
 
+.trip-strip {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin-top: 22px;
+}
+
+.trip-strip figure {
+    margin: 0;
+    background: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(23, 49, 58, .12);
+}
+
+.trip-strip img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.trip-strip figcaption {
+    font-size: .78rem;
+    font-weight: 600;
+    color: var(--accent1-color);
+    padding: 8px 6px 10px;
+    text-align: center;
+}
+
 footer {
     border-top: 1px solid #c9ded7;
     min-height: 96px;
@@ -234,6 +268,10 @@ footer {
         gap: 18px;
         margin: 42px 0;
         padding: 30px 0;
+    }
+
+    .trip-strip {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     footer {
