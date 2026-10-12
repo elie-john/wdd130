@@ -3,15 +3,16 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
-      content="Contact White Water Rafting for questions about our rafting trips, reservations, or to send us a message.">
+      content="Contact White Water Rafting with questions about trips, reservations, or planning your next river adventure.">
     <meta name="author" content="Eliejohn Nzinoly Tambwe">
     <title>Contact Us | White Water Rafting</title>
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body class="contact-page">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header>
         <a class="brand" href="index.html" aria-label="White Water Rafting home">
             <img src="images/wwr-rafting-logo.jpg" alt="White Water Rafting logo">
@@ -26,114 +27,99 @@
         </nav>
     </header>
 
-    <main>
-        <h1>White Water Rafting</h1>
-
-        <section class="contact-info" aria-labelledby="contact-heading">
-            <h2 id="contact-heading" class="centered-heading">Contact Us</h2>
-            <div class="company-details-centered">
-                <p>White Water Rafting Company</p>
-                <p>1502 Highway 191</p>
-                <p>Moab, UT 84532</p>
-                <p>+1 435 259 4040</p>
-                <p>info@whitewaterrafting.com</p>
-            </div>
+    <main id="main-content">
+        <section class="contact-company" aria-labelledby="company-title">
+            <h1 id="company-title">White Water Rafting Company</h1>
+            <address>
+                <p><strong>1502 Highway 191<br>Moab, UT 84532</strong></p>
+                <p><a href="tel:+14352594040">+1 435 259 4040</a></p>
+                <p><a href="mailto:info@whitewaterrafting.com">info@whitewaterrafting.com</a></p>
+            </address>
         </section>
 
-        <section class="contact-main">
+        <section class="contact-main page-section" aria-label="Map and contact form">
             <div class="map-column">
-                <h3>Find Us</h3>
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m15!1m10!1m3!1d3.1440981058924216!2d-109.54983950974257!3d38.573315535113956!2m1!1f0!3m2!1i1024!2i768!4f74.93068065671788!3m3!1m2!1s0x8747e1e59ab82d8d%3A0xb32b17af1d5c42d!2sMoab%2C%20UT%2084532%2C%20USA!3m2!1sen!2sza!4v1791196629755!5m2!1sen!2sza"
-                  allowfullscreen="" loading="lazy">
+                <h2 class="visually-hidden">Find us</h2>
+                <iframe title="Map showing White Water Rafting near Moab, Utah"
+                  src="https://www.google.com/maps/embed?pb=!1m15!1m10!1m3!1d3.1440981058924216!2d-109.54983950974257!3d38.573315535113956!2m1!1f0!3m2!1i1024!2i768!4f74.93068068071788!3m3!1m2!1s0x8747e1e59ab82d8d%3A0xb32b17af1d5c42d!2sMoab%2C%20UT%2084532%2C%20USA!3m2!1sen!2sza!4v1791196629755!5m2!1sen!2sza"
+                  loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen>
                 </iframe>
             </div>
 
             <div class="form-column">
-                <h3>Send Us a Message</h3>
-
-                <form action="#" method="POST" class="contact-form">
+                <h2 id="message-title">Send Us a Message</h2>
+                <form action="#" method="post" class="contact-form">
                     <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" placeholder="Placeholder" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="Placeholder"
+                        <label for="contact-name">Name</label>
+                        <input type="text" id="contact-name" name="name" autocomplete="name"
                           required>
                     </div>
-
                     <div class="form-group">
-                        <label>Message Purpose</label>
-                        <div class="radio-group">
-                            <label>
-                                <input type="radio" id="purpose-general" name="purpose"
-                                  value="general" checked required>
-                                General Inquiry
-                            </label>
-                            <label>
-                                <input type="radio" id="purpose-reservation" name="purpose"
-                                  value="reservation">
-                                Reservation Question
-                            </label>
-                            <label>
-                                <input type="radio" id="purpose-suggestion" name="purpose"
-                                  value="suggestion">
-                                Website Suggestion
-                            </label>
-                        </div>
+                        <label for="contact-email">Email</label>
+                        <input type="email" id="contact-email" name="email" autocomplete="email"
+                          required>
                     </div>
-
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" placeholder="Type here"
-                          required></textarea>
+                    <fieldset class="form-group purpose-options">
+                        <legend>Message Purpose</legend>
+                        <label><input type="radio" name="purpose" value="general" required> General
+                            Inquiry</label>
+                        <label><input type="radio" name="purpose" value="reservation"> Reservation
+                            Question</label>
+                        <label><input type="radio" name="purpose" value="suggestion"> Website
+                            Suggestion</label>
+                    </fieldset>
+                    <div class="form-group message-field">
+                        <label for="contact-message">Message</label>
+                        <textarea id="contact-message" name="message" rows="5" required></textarea>
                     </div>
-
                     <div class="form-group checkbox-group">
-                        <label>
-                            <input type="checkbox" id="newsletter" name="newsletter" value="yes"
-                              checked>
-                            Please Subscribe me to the monthly newsletter
+                        <label for="newsletter-opt-in">
+                            <input type="checkbox" id="newsletter-opt-in" name="newsletter"
+                              value="yes">
+                            Please subscribe me to the monthly newsletter
                         </label>
                     </div>
-
-                    <div class="form-group">
-                        <button type="submit">Get in Touch!</button>
-                    </div>
+                    <button class="button" type="submit">Get in Touch!</button>
                 </form>
             </div>
         </section>
 
-        <section class="employee-profiles" aria-labelledby="team-heading">
-            <h2 id="team-heading">We Are Here to Serve You</h2>
-
+        <section class="team-section page-section" aria-labelledby="contact-team-heading">
+            <div class="section-heading">
+                <p class="eyebrow">Here to help</p>
+                <h2 id="contact-team-heading">We Are Here to Serve You</h2>
+            </div>
             <div class="employee-grid">
-                <figure>
-                    <img src="images/employee1.jpg" alt="Jeremy Smith, Reservation Coordinator">
-                    <figcaption>Jeremy Smith, Reservation Coordinator</figcaption>
+                <figure class="employee-card">
+                    <img src="images/employee1.jpg" alt="Jeremy Smith, Reservation Coordinator"
+                      loading="lazy">
+                    <figcaption><strong>Jeremy Smith</strong><span>Reservation Coordinator</span>
+                    </figcaption>
                 </figure>
-                <figure>
-                    <img src="images/employee2.jpg" alt="Elisha Johnson, Founder and Lead Guide">
-                    <figcaption>Elisha Johnson, Founder and Lead Guide</figcaption>
+                <figure class="employee-card">
+                    <img src="images/employee2.jpg" alt="Elisha Johnson, Founder and Lead Guide"
+                      loading="lazy">
+                    <figcaption><strong>Elisha Johnson</strong><span>Founder and Lead Guide</span>
+                    </figcaption>
                 </figure>
-                <figure>
-                    <img src="images/employee3.jpg" alt="Alexa Williams, Safety Instructor">
-                    <figcaption>Alexa Williams, Safety Instructor</figcaption>
+                <figure class="employee-card">
+                    <img src="images/employee3.jpg" alt="Alexa Williams, Safety Instructor"
+                      loading="lazy">
+                    <figcaption><strong>Alexa Williams</strong><span>Safety Instructor</span>
+                    </figcaption>
                 </figure>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 White Water Rafting | Eliejohn Nzinoly Tambwe</p>
+        <p>© 2026 White Water Rafting · Eliejohn Nzinoly Tambwe</p>
         <nav class="socialmedia" aria-label="Social media">
-            <a href="https://www.facebook.com/" target="_blank" rel="noopener"><img
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img
                   src="images/facebook-square.svg" alt="Facebook"></a>
-            <a href="https://www.instagram.com/" target="_blank" rel="noopener"><img
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img
                   src="images/instagram-square.svg" alt="Instagram"></a>
-            <a href="https://www.linkedin.com/" target="_blank" rel="noopener"><img
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"><img
                   src="images/linkedin-square.svg" alt="LinkedIn"></a>
         </nav>
     </footer>

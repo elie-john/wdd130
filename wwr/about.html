@@ -3,15 +3,16 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
-      content="Meet White Water Rafting, a guide-owned whitewater company creating safe, unforgettable river adventures.">
+      content="Meet the White Water Rafting guides, learn our story, and explore the river adventures we offer.">
     <meta name="author" content="Eliejohn Nzinoly Tambwe">
     <title>About Us | White Water Rafting</title>
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header>
         <a class="brand" href="index.html" aria-label="White Water Rafting home">
             <img src="images/wwr-rafting-logo.jpg" alt="White Water Rafting logo">
@@ -26,90 +27,115 @@
         </nav>
     </header>
 
-    <main>
-        <div class="hero">
+    <main id="main-content">
+        <section class="about-hero" aria-labelledby="about-title">
             <img src="images/rafting-crew-paddling.jpg"
-              alt="A rafting crew paddling through a mountain river canyon">
-            <h1>White Water Rafting</h1>
-            <article>
-                <img src="images/smiling-rafting-crew.jpg"
-                  alt="Smiling rafting crew in a helmet and life jacket">
-                <p>We turn untamed water into shared stories. Our guide-owned crew pairs local river
-                    knowledge with warm, practical hospitality so every guest can feel the thrill,
-                    the connection, and the confidence to paddle on.</p>
-            </article>
-        </div>
+              alt="A rafting crew paddles through a mountain river canyon" fetchpriority="high">
+            <div class="about-hero-shade"></div>
+            <div class="about-hero-copy">
+                <h1 id="about-title">White Water Rafting</h1>
+                <article class="about-story-card">
+                    <p>We turn untamed water into shared stories. Our guide-owned crew pairs local
+                        river knowledge with warm, practical hospitality so every guest can feel the
+                        thrill, the connection, and the confidence to paddle on.</p>
+                    <img src="images/smiling-rafting-crew.jpg"
+                      alt="Smiling rafting guests wearing helmets and life jackets" loading="lazy">
+                </article>
+            </div>
+        </section>
 
-        <section class="history" aria-labelledby="history-heading">
-            <div>
+        <section class="history page-section" aria-labelledby="history-heading">
+            <div class="history-heading">
                 <p class="eyebrow">Our story</p>
                 <h2 id="history-heading">History</h2>
             </div>
             <div class="history-content">
-                <div class="history-text-left">
-                    <p>White Water Rafting began in 2008 with two boats, a hand-painted sign, and a
-                        belief
-                        that the river belongs to everyone. What started as weekend trips for
-                        neighbors has
-                        grown into a close-knit team of certified guides, river stewards, and
-                        adventure hosts.
-                        We still choose the quieter put-ins, learn every bend, and celebrate every
-                        first splash.</p>
-                </div>
-                <div class="history-image-center">
-                    <img src="images/rafting-crew-paddling.jpg"
-                      alt="A rafting crew paddling through a mountain river canyon">
-                </div>
-                <div class="history-text-right">
-                    <p>Every trip begins with a safety briefing and a look at the river ahead. Our
-                        guides share
-                        local stories, point out wildlife, and make sure every guest feels ready
-                        before the first
-                        paddle stroke. By the end of the day, strangers leave as friends with a
-                        story to tell.</p>
-                </div>
+                <p>White Water Rafting began in 2008 with two boats, a hand-painted sign, and a
+                    belief that the river belongs to everyone. What started as weekend trips for
+                    neighbors has grown into a close-knit team of guides, river stewards, and
+                    adventure hosts.</p>
+                <figure class="history-image-center">
+                    <img src="images/smiling-rafting-crew.jpg"
+                      alt="Rafting guests smile together in helmets and life jackets"
+                      loading="lazy">
+                    <figcaption>Every trip is a chance to share the river.</figcaption>
+                </figure>
+                <p>Every trip begins with a safety briefing and a look at the river ahead. Our
+                    guides share local stories, point out wildlife, and help guests feel ready
+                    before the first paddle stroke. By the end of the day, strangers leave as
+                    friends with a story to tell.</p>
             </div>
         </section>
 
-        <section class="adventures" aria-labelledby="adventure-heading">
-            <p class="eyebrow">Find your flow</p>
-            <h2 id="adventure-heading">Adventure Awaits You!</h2>
-            <p>From a bright first run to a full day of wild water, we will help you find the trip
-                that feels just right.</p>
+        <section class="team-section page-section" aria-labelledby="team-heading">
+            <div class="section-heading">
+                <p class="eyebrow">The people who guide you</p>
+                <h2 id="team-heading">Meet our river crew.</h2>
+                <p>Experienced guides and hosts make every outing welcoming, prepared, and centered
+                    on the people in the raft.</p>
+            </div>
+            <div class="employee-grid">
+                <figure class="employee-card">
+                    <img src="images/employee1.jpg" alt="Jeremy Smith, Reservation Coordinator"
+                      loading="lazy">
+                    <figcaption><strong>Jeremy Smith</strong><span>Reservation Coordinator</span>
+                    </figcaption>
+                </figure>
+                <figure class="employee-card">
+                    <img src="images/employee2.jpg" alt="Elisha Johnson, Founder and Lead Guide"
+                      loading="lazy">
+                    <figcaption><strong>Elisha Johnson</strong><span>Founder and Lead Guide</span>
+                    </figcaption>
+                </figure>
+                <figure class="employee-card">
+                    <img src="images/employee3.jpg" alt="Alexa Williams, Safety Instructor"
+                      loading="lazy">
+                    <figcaption><strong>Alexa Williams</strong><span>Safety Instructor</span>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
 
+        <section class="adventures page-section" aria-labelledby="adventure-heading">
+            <div class="section-heading">
+                <p class="eyebrow">Find your flow</p>
+                <h2 id="adventure-heading">Adventure awaits you.</h2>
+                <p>From a bright first run to a full day of wild water, we will help you find a trip
+                    that feels right for your group.</p>
+            </div>
             <div class="trip-strip">
-                <figure>
-                    <img src="images/trip-1.jpg" alt="Los Dientes del Diablo rapid">
+                <figure><img src="images/trip-1.jpg" alt="Los Dientes del Diablo rapid"
+                      loading="lazy">
                     <figcaption>Los Dientes del Diablo</figcaption>
                 </figure>
-                <figure>
-                    <img src="images/trip-2.jpg" alt="Big Mallard rapid">
+                <figure><img src="images/trip-2.jpg" alt="Big Mallard rapid" loading="lazy">
                     <figcaption>Big Mallard</figcaption>
                 </figure>
-                <figure>
-                    <img src="images/trip-3.jpg" alt="Half Day Adventure trip">
+                <figure><img src="images/trip-3.jpg" alt="Half Day Adventure on the river"
+                      loading="lazy">
                     <figcaption>Half Day Adventure</figcaption>
                 </figure>
-                <figure>
-                    <img src="images/trip-4.jpg" alt="Full Day Expedition trip">
+                <figure><img src="images/trip-4.jpg" alt="Full Day Expedition on the river"
+                      loading="lazy">
                     <figcaption>Full Day Expedition</figcaption>
                 </figure>
-                <figure>
-                    <img src="images/trip-5.jpg" alt="Family Float Adventure trip">
+                <figure><img src="images/trip-5.jpg" alt="Family Float Adventure on a calm river"
+                      loading="lazy">
                     <figcaption>Family Float Adventure</figcaption>
                 </figure>
             </div>
+            <a class="button" href="trips.html">View trip details</a>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 White Water Rafting | Eliejohn Nzinoly Tambwe</p>
+        <p>© 2026 White Water Rafting · Eliejohn Nzinoly Tambwe</p>
         <nav class="socialmedia" aria-label="Social media">
-            <a href="https://www.facebook.com/" target="_blank" rel="noopener"><img
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img
                   src="images/facebook-square.svg" alt="Facebook"></a>
-            <a href="https://www.instagram.com/" target="_blank" rel="noopener"><img
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img
                   src="images/instagram-square.svg" alt="Instagram"></a>
-            <a href="https://www.linkedin.com/" target="_blank" rel="noopener"><img
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"><img
                   src="images/linkedin-square.svg" alt="LinkedIn"></a>
         </nav>
     </footer>
